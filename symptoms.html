@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Pet Symptoms</title>
+    <link rel="stylesheet" href="symtoms.css">
+</head>
+<body>
+
+    <div class="container symptom-container">
+        <h2 class="title">🩺 Check Your Pet's Symptoms</h2>
+        <p class="subtitle">Enter symptoms, and our AI will help!</p>
+
+        <label for="symptomInput">🐶 Describe your pet's symptoms:</label>
+        <input type="text" id="symptomInput" placeholder="e.g., coughing, vomiting, fever">
+
+        <button class="btn-primary" onclick="analyzeSymptoms()">🔍 Check Now</button>
+
+        <div id="result" class="result-box">
+            <img id="petImage" src="" alt="Pet Image" class="hidden">
+            <p id="diagnosis"></p>
+        </div>
+    </div>
+
+    <script src="symtoms.js"></script>
+
+</body>
+</html>

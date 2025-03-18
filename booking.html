@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Pet Checkup</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <div class="container booking-container">
+        <h2 class="title">🐾 Book a Vet Appointment</h2>
+        <p class="subtitle">Ensure your pet gets the best care! 🩺</p>
+
+        <form id="appointmentForm">
+            <label for="petName">🐶 Pet Name:</label>
+            <input type="text" id="petName" required>
+
+            <label for="petType">🐕 Pet Type:</label>
+            <select id="petType" required>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="ownerName">👤 Owner Name:</label>
+            <input type="text" id="ownerName" required>
+
+            <label for="date">📅 Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">⏰ Time:</label>
+            <input type="time" id="time" required>
+
+            <button type="submit" class="btn-primary">🐾 Book Appointment</button>
+        </form>
+    </div>
+
+    <div id="confirmationPopup" class="popup">
+        <div class="popup-content">
+            <h3>✅ Appointment Confirmed!</h3>
+            <p id="confirmationDetails"></p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script src="booking.js"></script>
+
+</body>
+</html>
