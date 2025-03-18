@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Clinic Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>🐾 Pet Clinic</h2>
+        <ul>
+            <li><a href="index.html">🏠 Dashboard</a></li>
+            <li><a href="/online bookingg/booking.html">📅 Online Booking</a></li>
+            <li><a href="/petstore/petstore.html">🛍️ Pet Store</a></li>
+            <li><a href="/aichat/aichat.html">🤖 AI Chatbot</a></li>
+            <li><a href="/online bookingg/onlinecheck.html">🏥 Online Checkup</a></li>
+            <li><a href="/appointment/onlinebooking.html">📝 Appointments</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Welcome to Pet Clinic Dashboard</h1>
+        </header>
+
+        <section id="home" class="dashboard-section">
+            <h2>Dashboard Overview</h2>
+            <p>Manage your pet clinic services in one place.</p>
+        </section>
+
+        <section id="booking" class="dashboard-section">
+            <h2>📅 Online Booking</h2>
+            <p>Book an appointment for your pet.</p>
+            <button class="btn btn-primary">Book Now</button>
+        </section>
+
+        <section id="store" class="dashboard-section">
+            <h2>🛍️ Pet Store</h2>
+            <p>Buy pet food, toys, and accessories.</p>
+            <button class="btn btn-success">Shop Now</button>
+        </section>
+
+        <section id="chatbot" class="dashboard-section">
+            <h2>🤖 AI Chatbot</h2>
+            <p>Ask pet health-related questions.</p>
+            <button class="btn btn-info">Chat Now</button>
+        </section>
+
+        <section id="checkup" class="dashboard-section">
+            <h2>🏥 Online Checkup</h2>
+            <p>Consult a vet online for your pet’s health.</p>
+            <button class="btn btn-warning">Start Checkup</button>
+        </section>
+
+        <section id="appointments" class="dashboard-section">
+            <h2>📝 Appointments</h2>
+            <p>View upcoming and past appointments.</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Pet Name</th>
+                        <th>Owner</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Buddy</td>
+                        <td>John Doe</td>
+                        <td>2025-03-20</td>
+                        <td>Confirmed</td>
+                    </tr>
+                    <tr>
+                        <td>Whiskers</td>
+                        <td>Jane Smith</td>
+                        <td>2025-03-22</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+</body>
+</html>
